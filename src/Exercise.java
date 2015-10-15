@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -9,14 +11,13 @@ public class Exercise {
 
         System.out.println("Would you like to say Hello? [y/n]");
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        while (!name.equals(("n"))) {
-            if (name.equals("y")) {
-                System.out.println("Hello!");
-                System.exit(0);
+        String answer = scanner.nextLine();
+            while (!answer.equalsIgnoreCase(("n")))
+            if (answer.equals("y")) {
+            System.out.println("TROLL!");
+            System.exit(0);
             } else {
 
-            }
         }
     }
 }
